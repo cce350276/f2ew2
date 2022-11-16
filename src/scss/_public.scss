@@ -1,6 +1,51 @@
 body {
-  font-family: $font;
-  font-size:0.95rem;
+  font: 100% $font;
+  color: $primary-color;
+  background-image: url(../imgs/background_design.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
+.wrap_inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
 
+  //  @include respond-to("medium") {
+  //    max-width: 991px;
+  //    padding: 0 16px;
+  //  }
+}
+
+//footer
+
+.footer {
+  text-align: center;
+  background-color: #062b50;
+  color: #fff;
+  font-size: 12px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  .underline {
+    margin-left: 12px;
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.btn {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid transparent;
+  padding: 12px 32px;
+  cursor: pointer;
+  background: radial-gradient(
+    104.16% 106.67% at 50% 0%,
+    #fe9b4b 0%,
+    #f47814 100%
+  );
+  box-shadow: 0px 4px 8px rgba(255, 115, 0, 0.28);
+  border-radius: 8px;
+}
