@@ -249,25 +249,50 @@ header .header_wrap {
   margin-top: 20px;
 }
 
-.index {
+.index_cover_page {
   padding-top: 8.5rem;
+  position: relative;
 }
-.index .wrap_inner {
-  max-width: 1140rem;
-  padding: 0 5rem;
-}
-.index .wrap_inner .cover_img_wrap {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.index .wrap_inner .cover_img_wrap #svgContainer {
-  max-width: 100%;
-  max-height: 100%;
+.index_cover_page .silver_line {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 285px;
+}
+.index_cover_page .golden_line {
+  position: absolute;
+  top: 400px;
   right: 0;
-  bottom: 0;
-  margin: auto;
+}
+.index_cover_page .wrap_inner {
+  max-width: 1140rem;
+  padding-top: 8.5rem;
+  padding-left: 17.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.index_cover_page .wrap_inner .cover_img_wrap {
+  width: auto;
+}
+.index_cover_page .wrap_inner .cover_txt_wrap {
+  padding-top: 5rem;
+}
+.index_cover_page .wrap_inner .cover_txt_wrap p:nth-child(1) {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 81px;
+  color: #000000;
+}
+.index_cover_page .wrap_inner .cover_txt_wrap p:nth-child(2) {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 46px;
+}
+.index_cover_page .wrap_inner .cover_txt_wrap .btn-round {
+  margin-top: 1.5rem;
+  padding: 16px 60px;
+  gap: 10px;
+  background: radial-gradient(104.16% 106.67% at 50% 0%, #fe9b4b 0%, #f47814 100%);
+  -webkit-box-shadow: 0px 4px 8px rgba(255, 115, 0, 0.28);
+          box-shadow: 0px 4px 8px rgba(255, 115, 0, 0.28);
+  border-radius: 100px;
 }

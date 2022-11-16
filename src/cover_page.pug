@@ -1,12 +1,25 @@
 extends _layout.pug
 
-append style 
-    link(href='./css/styles.css' rel='stylesheet')
+append vars
+    - var title = '首頁';
 
 append content
 
-    .index
+    .index_cover_page
+        img.silver_line(src="./imgs/silver_line.png", alt="")
+        img.golden_line(src="./imgs/golden_line.png", alt="")
+
         //- .index_head
         .wrap_inner
             .cover_img_wrap
-                #svgContainer
+                img(src="./imgs/david-icon.png", alt="")
+                //- #svgContainer
+            .cover_txt_wrap
+                p 點點簽
+                p 隨手一簽就是潮！
+                .btn.btn-round 一鍵起簽
+
+append script
+    script(src='./js/bodymovin.js')
+    script(src='./js/lottie-web.js')
+    script(src='./js/david_animation.js')
