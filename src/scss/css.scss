@@ -4,15 +4,14 @@
 
 
 
+@import "_reset";
+@import "_variables";
+@import "_mixins";
+@import "_public";
 
-@import "variables";
-@import "mixins";
-@import "reset";
-
-
-
-@import "public";
-@import "main";
+@import "_header";
+@import "_main";
+@import "_coverpage";
 
 
 
