@@ -395,3 +395,168 @@ ul li.active:before {
 ul li.active:after {
   background: radial-gradient(125% 125% at 85.42% 0%, #85D3FF 0%, #2596D7 100%);
 }
+
+#overly {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7333333333);
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in;
+  transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in;
+}
+#overly.active {
+  visibility: visible;
+  opacity: 0.5;
+  -webkit-transition: visibility 0s ease-in 0s, opacity 0.3s ease-in;
+  transition: visibility 0s ease-in 0s, opacity 0.3s ease-in;
+}
+
+.overly-window {
+  width: 100%;
+  position: fixed;
+  z-index: 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 20%;
+  visibility: hidden;
+  -webkit-transition: visibility 0s ease-in 0.5s;
+  transition: visibility 0s ease-in 0.5s;
+}
+.overly-window.active {
+  visibility: visible;
+  -webkit-transition: visibility 0s ease-in 0s;
+  transition: visibility 0s ease-in 0s;
+}
+
+.dialog {
+  margin: auto;
+  position: relative;
+  background: #ffffff;
+  width: 460px;
+  height: 290px;
+  border-radius: 8px;
+  padding: 24px;
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 30px;
+  -webkit-transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in, margin-top 0.3s ease-in;
+  transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in, margin-top 0.3s ease-in;
+}
+.dialog.active {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0px;
+  -webkit-transition: visibility 0s ease-in 0s, opacity 0.3s ease-in, margin-top 0.3s ease-in;
+  transition: visibility 0s ease-in 0s, opacity 0.3s ease-in, margin-top 0.3s ease-in;
+}
+.dialog .title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dialog .title-wrap > h3 {
+  font-family: "Noto Sans TC", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #59597c;
+  margin-top: -4px;
+  margin-bottom: 16px;
+}
+.dialog .title-wrap .x-btn {
+  background: rgba(175, 175, 175, 0.15);
+  border-radius: 4px;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  margin: -16px;
+}
+.dialog .title-wrap .x-btn:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  cursor: pointer;
+  background: rgba(177, 177, 177, 0.2);
+  cursor: pointer;
+}
+.dialog .title-wrap .x-btn:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: pointer;
+  background: rgba(177, 177, 177, 0.6);
+}
+
+.sign-button-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sign-button-wrap > div {
+  position: relative;
+  width: 198px;
+  height: 198px;
+  -webkit-box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.28);
+          box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.28);
+  border-radius: 8px;
+  padding: 20px;
+  color: #fff;
+}
+.sign-button-wrap > div > h3 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sign-button-wrap > div > p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+.sign-button-wrap > div > svg {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+}
+.sign-button-wrap > div:hover {
+  -webkit-box-shadow: 0px 8px 12px rgba(37, 150, 215, 0.28);
+          box-shadow: 0px 8px 12px rgba(37, 150, 215, 0.28);
+  cursor: pointer;
+  -webkit-transform: translate(0px, -1px);
+          transform: translate(0px, -1px);
+}
+.sign-button-wrap > div:active {
+  -webkit-box-shadow: 0px 2px 4px rgba(37, 150, 215, 0.28);
+          box-shadow: 0px 2px 4px rgba(37, 150, 215, 0.28);
+  -webkit-transform: translate(0px, 1px);
+          transform: translate(0px, 1px);
+}
+.sign-button-wrap .sign-upload-btn {
+  background: radial-gradient(125% 125% at 85.42% 0%, #85d3ff 0%, #2596d7 100%);
+}
+.sign-button-wrap .sign-create-btn {
+  background: radial-gradient(104.16% 106.67% at 50% 0%, #fe9b4b 0%, #f47814 100%);
+}

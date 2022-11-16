@@ -26,6 +26,53 @@
   </div>
 </div>
 <h1>123 </h1>
+<button class="open">啟動</button>
+<div id="overly"></div>
+<div class="overly-window popup">
+  <div class="dialog popup">
+    <div class="title-wrap">
+      <h3>上傳簽名檔Abcde</h3>
+      <button class="x-btn close"> 
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.4982 0.428624C1.92671 -0.142875 1.00012 -0.142875 0.428624 0.428624C-0.142875 1.00012 -0.142875 1.92671 0.428624 2.4982L3.93042 6L0.428624 9.50179C-0.142875 10.0733 -0.142875 10.9999 0.428624 11.5714C1.00012 12.1429 1.92671 12.1429 2.4982 11.5714L6 8.06958L9.50179 11.5714C10.0733 12.1429 10.9999 12.1429 11.5714 11.5714C12.1429 10.9999 12.1429 10.0733 11.5714 9.50179L8.06958 6L11.5714 2.4982C12.1429 1.92671 12.1429 1.00012 11.5714 0.428624C10.9999 -0.142875 10.0733 -0.142875 9.50179 0.428624L6 3.93042L2.4982 0.428624Z" fill="#7D7D7D" fill-opacity="0.5"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="sign-button-wrap">
+      <div class="sign-upload-btn">
+        <h3>上傳簽名檔</h3>
+        <p>我已經有簽名檔了</p>
+        <svg width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28.2151 46.8357C26.9133 45.5339 24.8028 45.5339 23.501 46.8357C22.1993 48.1374 22.1993 50.248 23.5011 51.5497L37.6431 65.6918C38.9449 66.9936 41.0554 66.9936 42.3572 65.6918L56.4993 51.5497C57.801 50.248 57.801 48.1374 56.4993 46.8357C55.1975 45.5339 53.087 45.5339 51.7852 46.8357L43.3333 55.2876V30C43.3333 28.1591 41.841 26.6667 40 26.6667C38.159 26.6667 36.6667 28.1591 36.6667 30V55.2873L28.2151 46.8357Z" fill="url(#paint0_linear_198_205)"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C8.73743 0 7.58322 0.713341 7.01858 1.84262L0.381896 15.116C0.138022 15.5792 0 16.1068 0 16.6667V73.3333C0 75.1014 0.702379 76.7971 1.95262 78.0474C3.20287 79.2976 4.89856 80 6.66667 80H73.3333C75.1014 80 76.7971 79.2976 78.0474 78.0474C79.2976 76.7971 80 75.1014 80 73.3333V16.6667C80 16.6153 79.9988 16.5641 79.9965 16.5129C79.9736 16.0102 79.8395 15.5365 79.6181 15.1159L72.9814 1.84262C72.4168 0.713341 71.2626 0 70 0H10ZM71.2732 13.3333L67.9399 6.66667H12.0601L8.72678 13.3333H71.2732ZM6.66667 20V73.3333H73.3333V20H6.66667Z" fill="url(#paint1_linear_198_205)"></path>
+          <defs>
+            <lineargradient id="paint0_linear_198_205" x1="97.25" y1="-0.559364" x2="10.9353" y2="85.7554" gradientunits="userSpaceOnUse">
+              <stop stop-color="white"></stop>
+              <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+            </lineargradient>
+          </defs>
+          <lineargradient id="paint1_linear_198_205" x1="97.25" y1="-0.559364" x2="10.9353" y2="85.7554" gradientunits="userSpaceOnUse">
+            <stop stop-color="white"></stop>
+            <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+          </lineargradient>
+        </svg>
+      </div>
+      <div class="sign-create-btn">
+        <h3>創建簽名</h3>
+        <p>直接用滑鼠簽名也可以！</p>
+        <svg width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M50.7148 1.90609C51.9352 0.685642 53.5905 0 55.3165 0C57.0425 0 58.6978 0.685642 59.9182 1.90609L78.0939 20.0818C79.3144 21.3022 80 22.9575 80 24.6835C80 26.4095 79.3144 28.0648 78.0939 29.2852L67.4127 39.9664L67.3791 40.0005L67.345 40.0341L33.8869 73.4922H74.8395C76.6366 73.4922 78.0934 74.949 78.0934 76.7461C78.0934 78.5432 76.6366 80 74.8395 80L26.0313 80C26.0292 80 26.0266 80 26.0245 80H6.50782C4.78185 80 3.12656 79.3144 1.9061 78.0939C0.685644 76.8734 0 75.2181 0 73.4922V55.3165C0 54.5688 0.128832 53.8276 0.380062 53.1251C0.401462 53.0622 0.424843 52.9998 0.450202 52.9381C0.464908 52.9006 0.479967 52.8633 0.495379 52.8261C0.822426 52.0365 1.30179 51.3191 1.9061 50.7148L50.7148 1.90609ZM6.50783 61.8248L6.50782 73.4922H18.1752L6.50783 61.8248ZM26.0311 72.1446L7.85539 53.9689L42.3006 19.5237L60.4763 37.6994L26.0311 72.1446ZM73.4922 24.6835L65.078 33.0976L46.9023 14.922L55.3165 6.50782L73.4922 24.6835Z" fill="url(#paint0_linear_198_208)"></path>
+          <defs>
+            <lineargradient id="paint0_linear_198_208" x1="97.25" y1="-0.559364" x2="10.9353" y2="85.7554" gradientunits="userSpaceOnUse">
+              <stop stop-color="white"></stop>
+              <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+            </lineargradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container d-flex justify-content-center align-items-center">
   <button id="previous">Previous</button>
   <button id="next">Next</button>
@@ -34,3 +81,4 @@
 <script src="./js/vendor/jquery-3.6.0.min.js"></script>
 <script src="./js/jquery.js"></script>
 <script src="./js/stepbar.js"></script>
+<script src="./js/popup.js"></script>
