@@ -296,3 +296,102 @@ header .header_wrap {
           box-shadow: 0px 4px 8px rgba(255, 115, 0, 0.28);
   border-radius: 100px;
 }
+
+.popup_block {
+  font-family: "Noto Sans TC";
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 80px;
+}
+
+.popup_container {
+  margin: 50px auto;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  color: #59597C;
+  width: 100%;
+  text-align: center;
+}
+
+ul li:before {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  /* alinhar tudo ao centro */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*  pega o numero do step do html  */
+  content: attr(data-step);
+  /* circulo */
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  /*  cores 未完成icon  */
+  font-weight: 300;
+  background: radial-gradient(125% 125% at 85.42% 0%, #C4DBE9 0%, #849DAB 100%);
+  color: #fff;
+  -webkit-box-shadow: 0px 4px 8px rgba(137, 137, 137, 0.4);
+          box-shadow: 0px 4px 8px rgba(137, 137, 137, 0.4);
+  border-radius: 8px;
+  /*  posicionamento icon位置  */
+  position: absolute;
+  top: -35px;
+  left: calc(50% - 12px);
+  z-index: 99;
+}
+
+ul li:after {
+  /*  Desenha o traço  */
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: radial-gradient(125% 125% at 85.42% 0%, #C4DBE9 0%, #849DAB 100%);
+  /*  posiciona  */
+  position: absolute;
+  top: -23px;
+  left: -50%;
+}
+
+ul li:first-child:after {
+  width: 0;
+}
+
+ul li.active:before {
+  background: radial-gradient(125% 125% at 85.42% 0%, #85D3FF 0%, #2596D7 100%);
+  color: #fff;
+  -webkit-box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.4);
+          box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.4);
+  border-radius: 8px;
+}
+
+/* 完成bar */
+ul li.active:after {
+  background: radial-gradient(125% 125% at 85.42% 0%, #85D3FF 0%, #2596D7 100%);
+}
