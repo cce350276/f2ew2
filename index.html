@@ -31,9 +31,9 @@
   <button id="next">Next</button>
 </div>
 <button class="open">啟動</button>
-<div class="active" id="overly"></div>
-<div class="overly-window popup active">
-  <div class="dialog popup active">
+<div id="overly"></div>
+<div class="overly-window popup">
+  <div class="dialog popup">
     <div class="title-wrap">
       <h3>上傳簽名檔Abcde</h3>
       <button class="x-btn close"> 
@@ -42,18 +42,19 @@
         </svg>
       </button>
     </div>
-    <div class="sign-button-wrap">
-      <div class="sign-upload-btn">
-        <h3>上傳簽名檔</h3>
-        <p>我已經有簽名檔了</p><img src="./imgs/downloadbox.png" alt="">
-      </div>
-      <div class="sign-create-btn">
-        <h3>創建簽名</h3>
-        <p>直接用滑鼠簽名也可以！</p><img src="./imgs/pen.png" alt="">
-      </div>
+    <div class="gray-box"><img src="./imgs/icon_download.png" alt="">
+      <h3>點擊上傳/直接拖曳簽名檔案至此</h3>
+      <p>僅提供PDF/PNG/JPG等類型</p>
+    </div>
+    <div class="button-wrap">
+      <button class="btn_middle close btn"><a>上一步</a></button>
+      <button class="btn_middle close btn"><a>匯入簽名</a></button>
     </div>
   </div>
 </div>
+<button class="btn"><a>defalt</a></button>
+<button class="btn btn-primary"><a>primary</a></button>
+<button class="btn btn-secondary"><a>secondary</a></button>
 <script src="./js/vendor/bootstrap.bundle.min.js"></script>
 <script src="./js/vendor/jquery-3.6.0.min.js"></script>
 <script src="./js/jquery.js"></script>

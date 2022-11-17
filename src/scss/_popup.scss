@@ -43,13 +43,14 @@
       transition: visibility 0s ease-in 0s;
     }
   }
+
   //popout視窗
   .dialog {
     margin: auto;
     position: relative;
     background: #ffffff;
     width: 460px;
-    height: 290px;
+    // height: 290px;
     border-radius: 8px;
     padding: 24px;
     z-index: 50;
@@ -109,65 +110,86 @@
         }
       }
     }
+
+    .sign-button-wrap {
+      display: flex;
+      justify-content: space-between;
+    
+      & > div {
+        position: relative;
+        width: 198px;
+        height: 198px;
+        box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.28);
+        border-radius: 8px;
+        padding: 20px;
+        color: #fff;
+        & > h3 {
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 24px;
+        }
+    
+        & > p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 24px;
+        }
+    
+        & > img {
+          position: absolute;
+          right: 24px;
+          bottom: 24px;
+        }
+    
+        &:hover {
+          box-shadow: 0px 8px 12px rgba(37, 150, 215, 0.28);
+          cursor: pointer;
+          transform: translate(0px, -1px);
+        }
+    
+        &:active {
+          box-shadow: 0px 2px 4px rgba(37, 150, 215, 0.28);
+          transform: translate(0px, 1px);
+        }
+      }
+    
+      .sign-upload-btn {
+        background: radial-gradient(
+          125% 125% at 85.42% 0%,
+          #85d3ff 0%,
+          #2596d7 100%
+        );
+      }
+    
+      .sign-create-btn {
+        background: radial-gradient(
+          104.16% 106.67% at 50% 0%,
+          #fe9b4b 0%,
+          #f47814 100%
+        );
+      }
+    }
+  
+    .gray-box{
+      background: linear-gradient(276.95deg, rgba(187, 211, 224, 0.32) 51.73%, rgba(187, 211, 224, 0) 136.75%);
+border-radius: 4px;
+
+width: 100%;
+min-height: 30px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
   }
   
   //上傳簽名group
-  .sign-button-wrap {
-    display: flex;
-    justify-content: space-between;
-  
-    & > div {
-      position: relative;
-      width: 198px;
-      height: 198px;
-      box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.28);
-      border-radius: 8px;
-      padding: 20px;
-      color: #fff;
-      & > h3 {
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 24px;
-      }
-  
-      & > p {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 24px;
-      }
-  
-      & > img {
-        position: absolute;
-        right: 24px;
-        bottom: 24px;
-      }
-  
-      &:hover {
-        box-shadow: 0px 8px 12px rgba(37, 150, 215, 0.28);
-        cursor: pointer;
-        transform: translate(0px, -1px);
-      }
-  
-      &:active {
-        box-shadow: 0px 2px 4px rgba(37, 150, 215, 0.28);
-        transform: translate(0px, 1px);
-      }
-    }
-  
-    .sign-upload-btn {
-      background: radial-gradient(
-        125% 125% at 85.42% 0%,
-        #85d3ff 0%,
-        #2596d7 100%
-      );
-    }
-  
-    .sign-create-btn {
-      background: radial-gradient(
-        104.16% 106.67% at 50% 0%,
-        #fe9b4b 0%,
-        #f47814 100%
-      );
-    }
-  }
-  

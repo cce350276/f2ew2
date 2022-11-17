@@ -35,7 +35,7 @@ body {
 
 .btn {
   color: white;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 16px;
   line-height: 24px;
   border: 1px solid transparent;
@@ -48,4 +48,111 @@ body {
   );
   box-shadow: 0px 4px 8px rgba(255, 115, 0, 0.28);
   border-radius: 8px;
+
 }
+
+  
+
+
+  //
+// Base styles
+//
+
+.btn {
+
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  color: $body-color;
+
+
+
+  &:hover {
+    color: $body-color;
+    transform: scale(1.05);
+  }
+
+  .btn-check:focus + &,
+  &:focus {
+    outline: 0;
+    box-shadow:0px 4px 8px rgba(255, 115, 0, 0.28);
+  }
+
+  .btn-check:checked + &,
+  .btn-check:active + &,
+  &:active,
+  &.active {
+    transform: scale(1);
+
+
+    &:focus {
+    }
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+
+
+
+  }
+}
+
+
+.btn-primary{
+
+  background: radial-gradient(125% 125% at 85.42% 0%, #85D3FF 0%, #2596D7 100%);
+box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.28);
+
+&:hover{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+&:active,&:focus,&:active:focus{
+  color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 0 0rem;
+}
+
+}
+
+.btn-secondary{
+
+
+
+background: #D8D8D8;
+color: #737373;
+box-shadow: 0px 4px 8px rgba(160, 160, 160, 0.28);
+
+
+&:hover,&:active,&:focus,&:active:focus{
+  background: #D8D8D8;
+  color: #737373;
+  box-shadow: 0px 4px 8px rgba(160, 160, 160, 0.28);
+  border: transparent;
+  
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

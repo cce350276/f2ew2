@@ -1,7 +1,7 @@
 button.open 啟動
-#overly.active
-.overly-window.popup.active
-    .dialog.popup.active
+#overly
+.overly-window.popup
+    .dialog.popup
         .title-wrap
             h3 上傳簽名檔Abcde
             button.x-btn.close 
@@ -17,7 +17,7 @@ button.open 啟動
                         fill="#7D7D7D",
                         fill-opacity="0.5"
                     )
-        .sign-button-wrap
+        //- .sign-button-wrap
             .sign-upload-btn
                 h3 上傳簽名檔
                 p 我已經有簽名檔了
@@ -28,7 +28,15 @@ button.open 啟動
                 h3 創建簽名
                 p 直接用滑鼠簽名也可以！
                 img(src="./imgs/pen.png", alt="")
+        .gray-box
+            img(src="./imgs/icon_download.png", alt="")
+            h3 點擊上傳/直接拖曳簽名檔案至此
+            p 僅提供PDF/PNG/JPG等類型
+        .button-wrap
+            button.btn_middle.close.btn
+                a 上一步
+            button.btn_middle.close.btn
+                a 匯入簽名
 
 
-//-     button.btn_middle.close
-//-       a 確定
+
