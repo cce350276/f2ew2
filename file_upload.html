@@ -18,9 +18,19 @@
 </header>
 <div class="index">
   <div class="wrap_inner">
-    <div class="index_top_tab"><a>進度條放這</a></div>
+    <div class="index_top_tab">
+      <div class="popup_block">
+        <div class="popup_container">
+          <ul class="progressbar">
+            <li class="active" data-step="1">上傳文件</li>
+            <li data-step="2">製作簽名</li>
+            <li data-step="3">匯出檔案</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="index_center_wrap">
-      <div class="center_wrap_topTab"><a class="tab_item tab_item--active" href="#" title="上傳檔案">上傳檔案</a><a class="tab_item" href="#" title="拍照上傳">拍照上傳</a></div>
+      <div class="center_wrap_topTab"><a class="tab_item tab_item--active" href="#" title="上傳檔案">上傳檔案</a></div>
       <div class="center_wrap_bg">
         <div class="center_content">
           <div class="img-wrap-download"><img src="./imgs/icon_download.png" alt=""></div>
@@ -40,3 +50,5 @@
 <script src="./js/vendor/bootstrap.bundle.min.js"></script>
 <script src="./js/vendor/jquery-3.6.0.min.js"></script>
 <script src="./js/jquery.js"></script>
+<script src="./js/stepbar.js"></script>
+<script src="./js/popup.js"></script>
