@@ -1,0 +1,39 @@
+button.open 啟動簽名
+#overly.active
+.overly-window.popup.active
+    .dialog.popup.active
+        .title-wrap
+            h3 上傳簽名檔
+            button.x-btn.close 
+                svg(
+                    width="12",
+                    height="12",
+                    viewBox="0 0 12 12",
+                    fill="none",
+                    xmlns="http://www.w3.org/2000/svg"
+                )
+                    path(
+                        d="M2.4982 0.428624C1.92671 -0.142875 1.00012 -0.142875 0.428624 0.428624C-0.142875 1.00012 -0.142875 1.92671 0.428624 2.4982L3.93042 6L0.428624 9.50179C-0.142875 10.0733 -0.142875 10.9999 0.428624 11.5714C1.00012 12.1429 1.92671 12.1429 2.4982 11.5714L6 8.06958L9.50179 11.5714C10.0733 12.1429 10.9999 12.1429 11.5714 11.5714C12.1429 10.9999 12.1429 10.0733 11.5714 9.50179L8.06958 6L11.5714 2.4982C12.1429 1.92671 12.1429 1.00012 11.5714 0.428624C10.9999 -0.142875 10.0733 -0.142875 9.50179 0.428624L6 3.93042L2.4982 0.428624Z",
+                        fill="#7D7D7D",
+                        fill-opacity="0.5"
+                    )
+
+        .gray-box
+            img(src="./imgs/logo.png", alt="")
+            h3.mt-3 點擊滑鼠開始簽名
+
+            div
+                canvas#canvas(width='500' height='300' style='border: 1px solid #000')
+                img.show-img(width='250' height='150' style='border: 1px solid')
+                .btn-group
+                    button.clear Clear
+                    button.save Save
+
+
+        .button-wrap
+            button.btn_middle.close.btn.btn-primary
+                a 上一步
+            button.btn_middle.close.btn.btn-secondary
+                a 匯入簽名
+
+
