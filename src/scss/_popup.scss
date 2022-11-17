@@ -1,195 +1,218 @@
 //popout底層
 #overly {
-    display: block;
-    width: 100%;
-    height: 100vh;
-  
-    position: fixed;
-    top: 0;
-    left: 0;
-  
-    background: #000b;
-    z-index: 5;
-  
-    //popup animation
-  
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in;
-  
-    &.active {
-      visibility: visible;
-      opacity: 0.5;
-      transition: visibility 0s ease-in 0s, opacity 0.3s ease-in;
+  display: block;
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: #000b;
+  z-index: 5;
+
+  //popup animation
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in;
+
+  &.active {
+    visibility: visible;
+    opacity: 0.5;
+    transition: visibility 0s ease-in 0s, opacity 0.3s ease-in;
+  }
+}
+//popout中層
+.overly-window {
+
+  width: 100%;
+  position: fixed;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20%;
+
+  //popup animation
+
+  visibility: hidden;
+  transition: visibility 0s ease-in 0.5s;
+
+  &.active {
+    visibility: visible;
+    transition: visibility 0s ease-in 0s;
+  }
+}
+
+//popout視窗
+.dialog {
+  h3,p{
+    font-family: "Noto Sans TC", "Roboto", sans-serif;
+    font-style: normal;
+
+  }
+
+  h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    align-items: center;
+  }
+
+  p{
+
+  }
+
+
+
+
+  margin: auto;
+  position: relative;
+  background: #ffffff;
+  width: 460px;
+  // height: 290px;
+  border-radius: 8px;
+  padding: 24px;
+  z-index: 50;
+
+  //popup animation
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 30px;
+  transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in, margin-top 0.3s ease-in;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+    transition: visibility 0s ease-in 0s, opacity 0.3s ease-in, margin-top 0.3s ease-in;
+  }
+
+  .title-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    & > h3 {
+      color: #59597c;
+
+      margin-top: -4px;
+      margin-bottom: 16px;
+    }
+
+    .x-btn {
+      background: rgba(175, 175, 175, 0.15);
+      border-radius: 4px;
+      border: 0;
+      width: 24px;
+      height: 24px;
+      padding: 1px;
+      margin: -16px;
+
+      &:hover {
+        transform: scale(1.15);
+        cursor: pointer;
+        background: rgba(177, 177, 177, 0.2);
+        cursor: pointer;
+      }
+
+      &:active {
+        transform: scale(1);
+        cursor: pointer;
+        background: rgba(177, 177, 177, 0.6);
+      }
     }
   }
-  //popout中層
-  .overly-window {
-    width: 100%;
-    position: fixed;
-    z-index: 7;
+
+  .sign-button-wrap {
     display: flex;
+    justify-content: space-between;
+
+    & > div {
+      position: relative;
+      width: 198px;
+      height: 198px;
+      box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.28);
+      border-radius: 8px;
+      padding: 20px;
+      color: #fff;
+      & > h3 {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      & > p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+      }
+
+      & > img {
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+      }
+
+      &:hover {
+        box-shadow: 0px 8px 12px rgba(37, 150, 215, 0.28);
+        cursor: pointer;
+        transform: translate(0px, -1px);
+      }
+
+      &:active {
+        box-shadow: 0px 2px 4px rgba(37, 150, 215, 0.28);
+        transform: translate(0px, 1px);
+      }
+    }
+
+    .sign-upload-btn {
+      background: radial-gradient(125% 125% at 85.42% 0%, #85d3ff 0%, #2596d7 100%);
+    }
+
+    .sign-create-btn {
+      background: radial-gradient(104.16% 106.67% at 50% 0%, #fe9b4b 0%, #f47814 100%);
+    }
+  }
+
+  .gray-box {
+
+    color:
+    #59597C;
+    background: linear-gradient(276.95deg, rgba(187, 211, 224, 0.32) 51.73%, rgba(187, 211, 224, 0) 136.75%);
+    border-radius: 4px;
+
+    width: 100%;
+    min-height: 30px;
+
+    display:flex;
     flex-direction: column;
     align-items: center;
-    top: 20%;
-  
-    //popup animation
-  
-    visibility: hidden;
-    transition: visibility 0s ease-in 0.5s;
-  
-    &.active {
-      visibility: visible;
-      transition: visibility 0s ease-in 0s;
-    }
-  }
+    justify-content: center;
 
-  //popout視窗
-  .dialog {
-    margin: auto;
-    position: relative;
-    background: #ffffff;
-    width: 460px;
-    // height: 290px;
-    border-radius: 8px;
-    padding: 24px;
-    z-index: 50;
-  
-    //popup animation
-    visibility: hidden;
-    opacity: 0;
-    margin-top: 30px;
-    transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in,
-      margin-top 0.3s ease-in;
-  
-    &.active {
-      visibility: visible;
-      opacity: 1;
-      margin-top: 0px;
-      transition: visibility 0s ease-in 0s, opacity 0.3s ease-in,
-        margin-top 0.3s ease-in;
-    }
-  
-    .title-wrap {
-      display: flex;
-      justify-content: space-between;
-  
-      & > h3 {
-        font-family: "Noto Sans TC", "Roboto", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 32px;
-        align-items: center;
-        color: #59597c;
-  
-        margin-top: -4px;
-        margin-bottom: 16px;
-      }
-  
-      .x-btn {
-        background: rgba(175, 175, 175, 0.15);
-        border-radius: 4px;
-        border: 0;
-        width: 24px;
-        height: 24px;
-        padding: 1px;
-        margin: -16px;
-  
-        &:hover {
-          transform: scale(1.15);
-          cursor: pointer;
-          background: rgba(177, 177, 177, 0.2);
-          cursor: pointer;
-        }
-  
-        &:active {
-          transform: scale(1);
-          cursor: pointer;
-          background: rgba(177, 177, 177, 0.6);
-        }
-      }
+    padding: 30px 5px;
+    margin: 15px 0;
+
+    &>img{
+      width: 60px;
     }
 
-    .sign-button-wrap {
-      display: flex;
-      justify-content: space-between;
-    
-      & > div {
-        position: relative;
-        width: 198px;
-        height: 198px;
-        box-shadow: 0px 4px 8px rgba(37, 150, 215, 0.28);
-        border-radius: 8px;
-        padding: 20px;
-        color: #fff;
-        & > h3 {
-          font-weight: 900;
-          font-size: 16px;
-          line-height: 24px;
-        }
-    
-        & > p {
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 24px;
-        }
-    
-        & > img {
-          position: absolute;
-          right: 24px;
-          bottom: 24px;
-        }
-    
-        &:hover {
-          box-shadow: 0px 8px 12px rgba(37, 150, 215, 0.28);
-          cursor: pointer;
-          transform: translate(0px, -1px);
-        }
-    
-        &:active {
-          box-shadow: 0px 2px 4px rgba(37, 150, 215, 0.28);
-          transform: translate(0px, 1px);
-        }
-      }
-    
-      .sign-upload-btn {
-        background: radial-gradient(
-          125% 125% at 85.42% 0%,
-          #85d3ff 0%,
-          #2596d7 100%
-        );
-      }
-    
-      .sign-create-btn {
-        background: radial-gradient(
-          104.16% 106.67% at 50% 0%,
-          #fe9b4b 0%,
-          #f47814 100%
-        );
-      }
-    }
-  
-    .gray-box{
-      background: linear-gradient(276.95deg, rgba(187, 211, 224, 0.32) 51.73%, rgba(187, 211, 224, 0) 136.75%);
-border-radius: 4px;
-
-width: 100%;
-min-height: 30px;
-
-
+    &>h3{
+      font-size: 16px;
     }
 
-
-
-
-
-
-
-
+    &>p{
+      font-size: 12px;
+    }
 
 
 
   }
-  
-  //上傳簽名group
+  .button-wrap{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+//上傳簽名group
