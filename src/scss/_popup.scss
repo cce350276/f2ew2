@@ -92,7 +92,7 @@
         border: 0;
         width: 24px;
         height: 24px;
-        padding: 6px;
+        padding: 1px;
         margin: -16px;
   
         &:hover {
@@ -136,7 +136,7 @@
         line-height: 24px;
       }
   
-      & > svg {
+      & > img {
         position: absolute;
         right: 24px;
         bottom: 24px;

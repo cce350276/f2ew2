@@ -6,7 +6,6 @@ $(".close").click(function () {
   });
   
   $(".open").click(function () {
-    alert("hi");
     $("#overly").toggleClass("active");
     $(".popup").toggleClass("active");
   
