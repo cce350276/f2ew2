@@ -1,7 +1,7 @@
 extends _layout.pug
 
 append vars
-    - var title = '簽名';
+    - var title = '上傳檔案';
 
 append content
     input.select(type='file', accept='application/pdf')
@@ -10,5 +10,5 @@ append content
 append script
     // 引入pdf.js的套件
     script(src='https://mozilla.github.io/pdf.js/build/pdf.js')
-    script(src='../js/pdf.js')
+    script(src='../js/pdf_update.js')
     script(src='../js/fileReader.js')

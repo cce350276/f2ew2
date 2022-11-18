@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link href="./css/vendor/bootstrap.min.css" rel="stylesheet">
+<link href="./css/vendor/bootstrap.min.css.map">
+<link rel="stylesheet" href="./css/css.css" type="text/css">
+<title>今晚，我想來點點簽-下載簽署後文件</title>
+<input class="select" type="file" accept="application/pdf">
+<canvas id="canvas" style="border: 1px solid #000"></canvas>
+<div class="btn download">下載PDF</div>
+<script src="./js/vendor/bootstrap.bundle.min.js"></script>
+<script src="./js/vendor/jquery-3.6.0.min.js"></script>
+<script src="./js/jquery.js"></script>
+<!-- 以下三個js檔會影響到pdf.js的內容 -->
+<script src="./js/stepbar.js"></script>
+<script src="./js/popup.js"></script>
+<script src="./js/sign.js"></script>
+<!-- 引入pdf.js的套件-->
+<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+<script src="../js/pdf_update.js"></script>
+<script src="../js/fileReader.js"></script>
+<!-- 引入jsPDF的套件-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<script src="../js/pdf_download.js"></script>

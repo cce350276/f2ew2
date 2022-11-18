@@ -1,4 +1,4 @@
-// pdfjsLib.GlobalWorkerOptions.workerSrc = "https://mozilla.github.io/pdf.js/build/pdf.worker.js";
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https://mozilla.github.io/pdf.js/build/pdf.worker.js";
 const selectFile = document.querySelector(".select");
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
