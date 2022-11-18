@@ -1,7 +1,7 @@
-button.open 啟動POPup
-#overly
-.overly-window.popup
-    .dialog.popup
+button.open 啟動簽名
+#overly.active
+.overly-window.popup.active
+    .dialog.popup.active
         .title-wrap
             h3 上傳簽名檔
             button.x-btn.close 
@@ -17,25 +17,18 @@ button.open 啟動POPup
                         fill="#7D7D7D",
                         fill-opacity="0.5"
                     )
-        .sign-button-wrap
-            .sign-upload-btn
-                h3 上傳簽名檔
-                p 我已經有簽名檔了
-                img(src="./imgs/downloadbox.png", alt="")
 
-
-            .sign-create-btn
-                h3 創建簽名
-                p 直接用滑鼠簽名也可以！
-                img(src="./imgs/pen.png", alt="")
-
-        .gray-box
-            img(src="./imgs/icon_download.png", alt="")
-            h3 點擊上傳/直接拖曳簽名檔案至此
-            p 僅提供PDF/PNG/JPG等類型
         .gray-box
             img(src="./imgs/logo.png", alt="")
             h3.mt-3 點擊滑鼠開始簽名
+
+            div
+                canvas#canvas(width='500' height='300' style='border: 1px solid #000')
+                img.show-img(width='250' height='150' style='border: 1px solid')
+                .btn-group
+                    button.clear Clear
+                    button.save Save
+
 
         .button-wrap
             button.btn_middle.close.btn.btn-primary

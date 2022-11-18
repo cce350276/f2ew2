@@ -91,6 +91,8 @@ body {
 }
 
 .btn {
+  margin: 5px;
+  height: 48px;
   color: white;
   font-weight: 900;
   font-size: 16px;
@@ -507,6 +509,18 @@ ul li.active:after {
   -webkit-transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in, margin-top 0.3s ease-in;
   transition: visibility 0s ease-in 0.5s, opacity 0.3s ease-in, margin-top 0.3s ease-in;
 }
+.dialog h3, .dialog p {
+  font-family: "Noto Sans TC", "Roboto", sans-serif;
+  font-style: normal;
+}
+.dialog h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .dialog.active {
   visibility: visible;
   opacity: 1;
@@ -523,14 +537,6 @@ ul li.active:after {
           justify-content: space-between;
 }
 .dialog .title-wrap > h3 {
-  font-family: "Noto Sans TC", "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 32px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #59597c;
   margin-top: -4px;
   margin-bottom: 16px;
@@ -610,8 +616,44 @@ ul li.active:after {
   background: radial-gradient(104.16% 106.67% at 50% 0%, #fe9b4b 0%, #f47814 100%);
 }
 .dialog .gray-box {
+  color: #59597C;
   background: linear-gradient(276.95deg, rgba(187, 211, 224, 0.32) 51.73%, rgba(187, 211, 224, 0) 136.75%);
   border-radius: 4px;
   width: 100%;
   min-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 5px;
+  margin: 15px 0;
+}
+.dialog .gray-box > img {
+  width: 60px;
+}
+.dialog .gray-box > h3 {
+  font-size: 16px;
+}
+.dialog .gray-box > p {
+  font-size: 12px;
+}
+.dialog .button-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
