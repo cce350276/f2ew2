@@ -5,6 +5,7 @@ activeStep = 1;
 maxStep = 3;
 minStep = 1;
 
+//會造成pdf.js 無法顯示在網頁上 by D1
 checkButtonState();
 
 next.addEventListener('click', onNextClick);
@@ -23,6 +24,7 @@ function onPreviousClick() {
 }
 
 function checkButtonState() {
+ //會造成pdf.js 無法顯示在網頁上 by D1
   next.disabled= false;
   previous.disabled= false;
   
