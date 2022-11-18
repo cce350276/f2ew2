@@ -1,4 +1,3 @@
-// const selectFile = document.querySelector(".select");
 selectFile.addEventListener("change", (e) => {
   if (e.target.files[0] === undefined) return;
 
@@ -16,5 +15,6 @@ selectFile.addEventListener("change", (e) => {
     // 獲取readAsArrayBuffer產生的結果，並用來渲染PDF
     const typedarray = new Uint8Array(fileReader.result);
     renderPDF(typedarray);
+    // window.location.href = "PDF_download.html";
   });
 });

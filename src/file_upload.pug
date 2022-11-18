@@ -24,10 +24,10 @@ append content
                             p 直接拖曳檔案至此(限 .pdf, .png, .jpg)
                             p 檔案不得超過10MB
                 .bottom_wrap
-                    label.btn 上傳檔案
-                        //- input.select(type='file', style="display:none;" , accept='application/pdf')
-//- append script
-//-     // 引入pdf.js的套件
-//-     script(src='https://mozilla.github.io/pdf.js/build/pdf.js')
-//-     script(src='../js/pdf.js')
-//-     script(src='../js/fileReader.js')
+                    label.btn 上傳文件
+                        input.select(type='file', style="display:none;" , accept='application/pdf')
+append script
+    // 引入pdf.js的套件
+    script(src='https://mozilla.github.io/pdf.js/build/pdf.js')
+    script(src='../js/pdf.js')
+    script(src='../js/fileReader.js')
