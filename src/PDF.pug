@@ -1,0 +1,14 @@
+extends _layout.pug
+
+append vars
+    - var title = '簽名';
+
+append content
+    input.select(type='file', accept='application/pdf')
+    canvas#canvas(style='border: 1px solid #000')
+
+append script
+    // 引入pdf.js的套件
+    script(src='https://mozilla.github.io/pdf.js/build/pdf.js')
+    script(src='../js/pdf.js')
+    script(src='../js/fileReader.js')
