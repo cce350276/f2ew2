@@ -66,7 +66,7 @@ a:link, a:active {
 body {
   font: 100% "微軟正黑體", "Noto Sans TC", "Roboto", sans-serif;
   color: radial-gradient(104.16% 106.67% at 50% 0%, #FE9B4B 0%, #F47814 100%);
-  background-image: url(../imgs/background_design.png);
+  background-image: url(../imgs/background_design.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
