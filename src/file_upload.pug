@@ -27,6 +27,8 @@ append content
                 .bottom_wrap
                     label.btn 上傳文件
                         input.select(type='file', style="display:none;" , accept='application/pdf')
+                    button.btn.open 加入簽名
+        include _popup_sign.pug
 append script
     // 引入pdf.js的套件
     script(src='https://mozilla.github.io/pdf.js/build/pdf.js')
