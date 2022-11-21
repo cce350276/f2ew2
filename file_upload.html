@@ -37,21 +37,15 @@
           <div class="img-wrap-download"><img src="./imgs/icon_download.svg" alt=""></div>
           <div class="txt_wrap_upload">
             <p>點擊此處上傳檔案</p>
-            <p>直接拖曳檔案至此(限 .pdf, .png, .jpg)</p>
+            <p>(限 .pdf, .png, .jpg)</p>
             <p>檔案不得超過10MB</p>
           </div>
         </div>
       </div>
       <div class="bottom_wrap">
-        <div class="2nd_step_block hide">
-          <div class="btn btn-primary">重新上傳</div>
-          <div class="btn">加入簽名</div>
-        </div>
-        <div class="1st_step_block active">
-          <label class="btn" onclick="myFunction()">上傳文件
-            <input class="select" type="file" style="display:none;" accept="application/pdf">
-          </label>
-        </div>
+        <label class="btn">上傳文件
+          <input class="select" type="file" style="display:none;" accept="application/pdf">
+        </label>
       </div>
     </div>
   </div>
@@ -59,6 +53,8 @@
 <script src="./js/vendor/bootstrap.bundle.min.js"></script>
 <script src="./js/vendor/jquery-3.6.0.min.js"></script>
 <script src="./js/jquery.js"></script>
+<script src="./js/popup.js"></script>
+<script src="./js/sign.js"></script>
 <!-- 引入pdf.js的套件-->
 <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 <script src="../js/pdf_update.js"></script>

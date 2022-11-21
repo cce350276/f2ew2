@@ -5,25 +5,22 @@ append vars
 
 append content
 
-    include _header.pug
+    .index_cover_page
+        img.silver_line(src="./imgs/silver_line.svg", alt="")
+        img.golden_line(src="./imgs/golden_line.svg", alt="")
 
-    include _stepbar.pug
+        //- .index_head
+        .wrap_inner
+            .cover_img_wrap
+                img(src="./imgs/david-icon.svg", alt="")
+                //- #svgContainer
+            .cover_txt_wrap
+                p 點點簽
+                p 隨手一簽就是潮！
+                a(href="/file_upload.html").btn.btn-round 一鍵起簽 
+                    
 
-    h1 123 
-
-
-
-    include _stepbar_btn.pug
-
-
-    //- include _popup.pug
-
-    button.btn
-        a default
-    button.btn.btn-primary
-        a primary
-    button.btn.btn-secondary
-        a secondary
-
-    include _signpanel.pug
-    
+append script
+    //- script(src='./js/bodymovin.js')
+    //- script(src='./js/lottie-web.js')
+    //- script(src='./js/david_animation.js')
