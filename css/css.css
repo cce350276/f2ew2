@@ -258,8 +258,9 @@ header .header_wrap {
   height: 388px;
   max-width: 572px;
 }
-.index .wrap_inner .index_center_wrap .center_wrap_bg .center_content {
-  display: block;
+.index .wrap_inner .index_center_wrap .center_wrap_bg #canvas {
+  padding-left: 31%;
+  height: 100%;
 }
 .index .wrap_inner .index_center_wrap .center_wrap_bg .img-wrap-download {
   padding-top: 72px;
@@ -316,8 +317,8 @@ header .header_wrap {
 }
 .index_cover_page .wrap_inner {
   max-width: 1140rem;
-  padding-top: 8.5rem;
-  padding-left: 17.5rem;
+  padding-top: 5%;
+  padding-left: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,6 +341,7 @@ header .header_wrap {
   line-height: 46px;
 }
 .index_cover_page .wrap_inner .cover_txt_wrap .btn-round {
+  font-size: 1rem;
   margin-top: 1.5rem;
   padding: 16px 60px;
   gap: 10px;

@@ -83,8 +83,9 @@
                 height: 388px;
                 max-width: 572px;
 
-                .center_content {
-                    display: block;
+                #canvas {
+                    padding-left: 31%;
+                    height: 100%;
                 }
 
                 .img-wrap-download {

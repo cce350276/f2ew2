@@ -1,6 +1,7 @@
 pdfjsLib.GlobalWorkerOptions.workerSrc = "https://mozilla.github.io/pdf.js/build/pdf.worker.js";
 const selectFile = document.querySelector(".select");
 const canvas = document.querySelector("#canvas");
+const content = document.querySelector(".center_content");
 const ctx = canvas.getContext("2d");
 
 async function renderPDF(data) {
@@ -14,5 +15,20 @@ async function renderPDF(data) {
     viewport: viewport,
   });
 }
+
+selectFile.addEventListener('click', (e) => {
+  canvas.style.display =
+    canvas.style.display === 'none'
+      ? ''
+      : 'none';
+});
+
+selectFile.addEventListener('click', (e) => {
+  content.style.display =
+    content.style.display === 'block'
+      ? 'none'
+      : '';
+});
+
 
 renderPDF("./sample.pdf");
