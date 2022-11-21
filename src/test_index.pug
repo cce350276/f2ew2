@@ -1,0 +1,29 @@
+extends _layout.pug
+
+append vars
+    - var title = '首頁';
+
+append content
+
+    include _header.pug
+
+    include _stepbar.pug
+
+    h1 123 
+
+
+
+    include _stepbar_btn.pug
+
+
+    //- include _popup.pug
+
+    button.btn
+        a default
+    button.btn.btn-primary
+        a primary
+    button.btn.btn-secondary
+        a secondary
+
+    include _signpanel.pug
+    
